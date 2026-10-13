@@ -19,12 +19,11 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "scripts"))
-sys.path.insert(0, str(ROOT / "spikes" / "shringarpure_match"))
+sys.path.insert(0, str(ROOT))
 
-import run_rag_workshop_semantic as sem
-import run_spike
-from fix_exam_questions import is_blood_protein
+from pipeline.embed import BATCH, cache_dir, cap_text, chunk_paths, embed_request, embedded_pmids
+from pipeline.measurement import is_blood_protein
+from pipeline.model_api import INPUT_USD_PER_TOKEN, MODEL, OUTPUT_USD_PER_TOKEN, SYSTEM, parse_gene
 
 EXAM = ROOT / "data" / "ukb" / "final_exam"
 DB = ROOT / "data" / "ukb" / "pubmed" / "weeks_abstracts.sqlite"
@@ -221,7 +220,7 @@ def load_pools() -> dict[str, dict]:
 
 
 def embed_missing(api_key: str, pmids: list[int]) -> None:
-    done = sem.embedded_pmids()
+    done = embedded_pmids()
     missing = [pmid for pmid in pmids if pmid not in done]
     print(f"EMBED_HAVE {len(done)} MISSING {len(missing)} spent {spent():.2f}", flush=True)
     if not missing:
@@ -235,26 +234,27 @@ def embed_missing(api_key: str, pmids: list[int]) -> None:
             f"SELECT pmid, title, abstract FROM abstracts WHERE pmid IN ({marks})",
             batch,
         ):
-            texts[int(pmid)] = sem.cap_text(f"{title or ''} {abstract or ''}".strip())
+            texts[int(pmid)] = cap_text(f"{title or ''} {abstract or ''}".strip())
     pending = [(pmid, texts[pmid]) for pmid in missing if texts.get(pmid)]
     blank = len(missing) - len(pending)
     if blank:
         print(f"EMBED_BLANK {blank}", flush=True)
-    existing = sem.chunk_paths()
+    cache_dir().mkdir(parents=True, exist_ok=True)
+    existing = chunk_paths()
     next_chunk = 1 + max((int(path.stem.split("_")[1]) for path in existing), default=-1)
-    total = (len(pending) + sem.BATCH - 1) // sem.BATCH
-    for batch_index, start in enumerate(range(0, len(pending), sem.BATCH), start=1):
+    total = (len(pending) + BATCH - 1) // BATCH
+    for batch_index, start in enumerate(range(0, len(pending), BATCH), start=1):
         if spent() >= CAP:
             raise SystemExit(f"CAP embed at {spent():.2f}, batch {batch_index} of {total}")
-        batch = pending[start : start + sem.BATCH]
-        payload = sem.embed_request(api_key, [text for _, text in batch])
+        batch = pending[start : start + BATCH]
+        payload = embed_request(api_key, [text for _, text in batch])
         rows = sorted(payload["data"], key=lambda item: item["index"])
         if len(rows) != len(batch):
             raise SystemExit("embedding response length mismatch")
         vectors = np.asarray([row["embedding"] for row in rows], dtype=np.float32)
         pmid_arr = np.asarray([pmid for pmid, _ in batch], dtype=np.int64)
-        out = sem.CACHE / f"chunk_{next_chunk:05d}.npz"
-        tmp = sem.CACHE / f"partial_{next_chunk:05d}.npz"
+        out = cache_dir() / f"chunk_{next_chunk:05d}.npz"
+        tmp = cache_dir() / f"partial_{next_chunk:05d}.npz"
         np.savez(tmp, pmids=pmid_arr, vectors=vectors)
         tmp.replace(out)
         next_chunk += 1
@@ -279,7 +279,7 @@ def embed_queries(api_key: str, rows: list[dict]) -> dict[str, np.ndarray]:
         if spent() >= CAP:
             raise SystemExit(f"CAP query embed at {spent():.2f}")
         batch_ids = missing_ids[start : start + 96]
-        payload = sem.embed_request(api_key, [wanted[key] for key in batch_ids])
+        payload = embed_request(api_key, [wanted[key] for key in batch_ids])
         ordered = sorted(payload["data"], key=lambda item: item["index"])
         for key, item in zip(batch_ids, ordered):
             vector = np.asarray(item["embedding"], dtype=np.float32)
@@ -298,7 +298,7 @@ def embed_queries(api_key: str, rows: list[dict]) -> dict[str, np.ndarray]:
 def load_needed_matrix(needed: set[int]) -> tuple[np.ndarray, dict[int, int]]:
     pmids = []
     vectors = []
-    for path in sem.chunk_paths():
+    for path in chunk_paths():
         data = np.load(path)
         arr = data["pmids"].astype(np.int64)
         keep = np.array([int(pmid) in needed for pmid in arr])
@@ -329,12 +329,12 @@ def done_ids(path: Path) -> set[str]:
 
 def chat(api_key: str, user: str) -> dict:
     body = {
-        "model": run_spike.MODEL,
+        "model": MODEL,
         "temperature": 0,
         "max_completion_tokens": 500,
         "reasoning_effort": "none",
         "messages": [
-            {"role": "system", "content": run_spike.SYSTEM},
+            {"role": "system", "content": SYSTEM},
             {"role": "user", "content": user},
         ],
     }
@@ -372,7 +372,7 @@ def chat(api_key: str, user: str) -> dict:
         "text": text,
         "prompt_tokens": prompt,
         "completion_tokens": completion,
-        "cost_usd": prompt * run_spike.INPUT_USD_PER_TOKEN + completion * run_spike.OUTPUT_USD_PER_TOKEN,
+        "cost_usd": prompt * INPUT_USD_PER_TOKEN + completion * OUTPUT_USD_PER_TOKEN,
     }
 
 
@@ -380,7 +380,7 @@ def record_answer(row: dict, user: str, api_key: str, handle) -> None:
     if spent() >= CAP:
         raise SystemExit(f"CAP before {row['neighborhood_id']} at {spent():.2f}")
     result = chat(api_key, user)
-    gene, confidence = run_spike.parse_gene(result["text"])
+    gene, confidence = parse_gene(result["text"])
     allowed = {symbol.upper() for symbol in symbols_of(row)}
     predicted = gene.strip()
     in_list = predicted.upper() in allowed if predicted else False

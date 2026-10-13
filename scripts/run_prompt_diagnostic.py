@@ -18,9 +18,9 @@ from scipy.stats import binomtest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-sys.path.insert(0, str(ROOT / "spikes" / "shringarpure_match"))
+sys.path.insert(0, str(ROOT))
 
-import run_spike
+from pipeline.model_api import INPUT_USD_PER_TOKEN, MODEL, OUTPUT_USD_PER_TOKEN, SYSTEM, parse_gene
 from run_final_exam import rows_to_call, symbols_of
 
 EXAM = ROOT / "data" / "ukb" / "final_exam"
@@ -40,10 +40,10 @@ HINT = (
 
 def diagnostic_system() -> str:
     marker = "based on literature evidence.\n"
-    if run_spike.SYSTEM.count(marker) != 1:
+    if SYSTEM.count(marker) != 1:
         raise SystemExit("locked system prompt does not contain the expected line")
-    system = run_spike.SYSTEM.replace(marker, marker + HINT + "\n", 1)
-    if HINT not in system or system == run_spike.SYSTEM:
+    system = SYSTEM.replace(marker, marker + HINT + "\n", 1)
+    if HINT not in system or system == SYSTEM:
         raise SystemExit("diagnostic prompt was not inserted")
     return system
 
@@ -92,7 +92,7 @@ def reason_of(text: str) -> str:
 
 def chat(api_key: str, system: str, user: str) -> dict:
     body = {
-        "model": run_spike.MODEL,
+        "model": MODEL,
         "temperature": 0,
         "max_completion_tokens": 500,
         "reasoning_effort": "none",
@@ -136,7 +136,7 @@ def chat(api_key: str, system: str, user: str) -> dict:
         "text": text,
         "prompt_tokens": prompt,
         "completion_tokens": completion,
-        "cost_usd": prompt * run_spike.INPUT_USD_PER_TOKEN + completion * run_spike.OUTPUT_USD_PER_TOKEN,
+        "cost_usd": prompt * INPUT_USD_PER_TOKEN + completion * OUTPUT_USD_PER_TOKEN,
     }
 
 
@@ -160,7 +160,7 @@ def run() -> None:
                 f"Genes in locus: {row['candidate_genes']}\n"
             )
             result = chat(api_key, system, user)
-            gene, confidence = run_spike.parse_gene(result["text"])
+            gene, confidence = parse_gene(result["text"])
             allowed = {symbol.upper() for symbol in symbols_of(row)}
             predicted = gene.strip()
             in_list = predicted.upper() in allowed if predicted else False

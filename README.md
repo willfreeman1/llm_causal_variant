@@ -197,7 +197,7 @@ Two choices in how the test was built changed the conclusions. Without removing 
 | `pipeline/` | The system itself: the flowchart, the paper search, the safeguards, the choosing rule, and the script that re-derives every score from the saved answers |
 | `scripts/` | The steps that produced the results: building the question sets, running the statistical model, scoring, and the follow-up analyses |
 | `scripts/trait_scores/` | The scripts that built the trait-match scores. They read `TRAIT_SCORES_DIR` |
-| `questions/` | The older question file, the nearest-gene file, and the new-study lists |
+| `questions/` | The older question file, the gene lists used to download papers, the nearest-gene file, and the new-study lists |
 | `results/` | Saved answers for every reported run, both statistical-model outputs, and the summaries behind `results_table.md` |
 | `older_studies/` | The baseline answers on the 1,348 older questions, and the paper-search answers on the 18 held-out chromosomes |
 | `early_checks/` | The memorisation check and the list-order check, each with its script and saved summary |

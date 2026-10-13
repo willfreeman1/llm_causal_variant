@@ -24,7 +24,7 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
-WEEKS = ROOT / "spikes" / "shringarpure_match" / "data" / "weeks_et_al_step2.for_llm.tsv"
+WEEKS = ROOT / "questions" / "uk_biobank_gene_lists.tsv"
 OUT_DIR = ROOT / "data" / "ukb" / "pubmed"
 DB_PATH = OUT_DIR / "weeks_abstracts.sqlite"
 STATUS_PATH = OUT_DIR / "download_status.json"

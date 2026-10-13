@@ -8,10 +8,10 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-WEEKS = ROOT / "data" / "ukb" / "zenodo_directory_may_2025" / "data" / "benchmark_datasets" / "weeks_et_al_step1.tsv"
-CALDERA = ROOT / "data" / "ukb" / "caldera_results" / "weeks_caldera_genes.tsv"
-LLM = ROOT / "spikes" / "shringarpure_match" / "results.jsonl"
-NEAREST = ROOT / "data" / "ukb" / "predictions" / "weeks_et_al.nearest_gene.csv"
+WEEKS = ROOT / "questions" / "uk_biobank_questions.tsv"
+CALDERA = ROOT / "results" / "uk_caldera_genes.tsv"
+LLM = ROOT / "older_studies" / "uk_baseline_answers.jsonl"
+NEAREST = ROOT / "questions" / "uk_biobank_nearest_gene.csv"
 OUT = ROOT / "data" / "ukb" / "caldera_results" / "summary.json"
 
 
