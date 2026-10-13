@@ -1,4 +1,4 @@
-"""Row-completion memorization spike for the Open Targets gold-standard TSV.
+"""Check whether the model can recite rows from a saved Open Targets table.
 
 Asks gpt-5.4 to recite file artifacts it could not know from biology:
 line number -> exact cells, and a keyed lookup of curator metadata.
