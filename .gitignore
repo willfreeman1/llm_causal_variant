@@ -1,0 +1,50 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Large local data (downloads, paper database, embedding caches)
+/data/
+spikes/
+*.log
+
+# One-off scripts that are not needed to rebuild a reported number
+scripts/estimate_final_exam_cost.py
+scripts/fetch_ukb_field_notes.py
+
+# Working notes written for development, not for readers of the repo
+HANDOFF.md
+context.md
+overview.md
+final_exam_setup.md
+causal_gene_prioritization_brief.md
+brief_for_grok_*.md
+grok_reply_*.md
+
+# Other people's papers (cited in the README instead)
+prior_art/
+
+# Full upstream clone of CALDERA; the run used third_party/caldera_run
+third_party/caldera/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+
+# Editor and assistant tooling
+.specstory/
+.claude/
+.vscode/
+.idea/
+.cursor/
+
+# OS
+Thumbs.db
+.DS_Store

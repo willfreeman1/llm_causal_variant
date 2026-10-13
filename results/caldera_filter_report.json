@@ -1,0 +1,13 @@
+{
+  "exam_b": 38,
+  "with_noncoding_set": 29,
+  "no_set_caldera_wrong": 9,
+  "dropped_coding_pip_over_0.5": 2,
+  "dropped_same_signal": 6,
+  "dropped_either": 7,
+  "kept": 22,
+  "kept_with_any_c_gene": 3,
+  "labeled_gene_coding_any_pip": 7,
+  "variants_with_multiple_coding_genes": 0,
+  "stop": false
+}

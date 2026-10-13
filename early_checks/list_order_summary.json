@@ -1,0 +1,60 @@
+{
+  "model": "gpt-5.4",
+  "seed": 20261006,
+  "shuffles": 4,
+  "spent_usd": 0.600555,
+  "median_clinvar": 331,
+  "overall": {
+    "n_loci": 80,
+    "n_trials": 320,
+    "accuracy": 0.925,
+    "loci_same_pick_every_shuffle": 78,
+    "loci_same_pick_rate": 0.975,
+    "shuffle_pair_agreement": 0.9833333333333333,
+    "spearman_input_position_vs_output_rank": -0.014671158783678181,
+    "hit_rate_causal_gene_in_first_third": 0.9375,
+    "hit_rate_causal_gene_in_last_third": 0.9252336448598131,
+    "first_third_n": 112,
+    "last_third_n": 107,
+    "wrong_pick_more_famous_than_truth": 0.5,
+    "wrong_n": 24,
+    "chance_other_gene_more_famous_than_truth": 0.5320757020757023,
+    "mean_within_list_spearman_clinvar_vs_rank": -0.3308550510571081
+  },
+  "by_arm": {
+    "obscure": {
+      "n_loci": 40,
+      "n_trials": 160,
+      "accuracy": 0.85,
+      "loci_same_pick_every_shuffle": 38,
+      "loci_same_pick_rate": 0.95,
+      "shuffle_pair_agreement": 0.9666666666666667,
+      "spearman_input_position_vs_output_rank": -0.04736820893347036,
+      "hit_rate_causal_gene_in_first_third": 0.8627450980392157,
+      "hit_rate_causal_gene_in_last_third": 0.8461538461538461,
+      "first_third_n": 51,
+      "last_third_n": 52,
+      "wrong_pick_more_famous_than_truth": 0.5,
+      "wrong_n": 24,
+      "chance_other_gene_more_famous_than_truth": 0.5320757020757023,
+      "mean_within_list_spearman_clinvar_vs_rank": -0.13677444079711348
+    },
+    "famous": {
+      "n_loci": 40,
+      "n_trials": 160,
+      "accuracy": 1.0,
+      "loci_same_pick_every_shuffle": 40,
+      "loci_same_pick_rate": 1.0,
+      "shuffle_pair_agreement": 1.0,
+      "spearman_input_position_vs_output_rank": null,
+      "hit_rate_causal_gene_in_first_third": 1.0,
+      "hit_rate_causal_gene_in_last_third": 1.0,
+      "first_third_n": 61,
+      "last_third_n": 55,
+      "wrong_pick_more_famous_than_truth": null,
+      "wrong_n": 0,
+      "chance_other_gene_more_famous_than_truth": null,
+      "mean_within_list_spearman_clinvar_vs_rank": -0.5249356613171027
+    }
+  }
+}

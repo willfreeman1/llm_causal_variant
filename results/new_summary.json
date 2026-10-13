@@ -1,0 +1,580 @@
+{
+  "spend": {
+    "embed_usd": 3.385743499999998,
+    "gpt_usd": 28.378074999999978
+  },
+  "slices": {
+    "main": {
+      "no_papers": {
+        "n": 429,
+        "correct": 200,
+        "percent": 46.62,
+        "question_interval": [
+          41.96,
+          51.05
+        ],
+        "gene_interval": [
+          40.74,
+          52.39
+        ]
+      },
+      "with_papers": {
+        "n": 429,
+        "correct": 203,
+        "percent": 47.32,
+        "question_interval": [
+          42.89,
+          51.98
+        ],
+        "gene_interval": [
+          41.54,
+          53.2
+        ]
+      },
+      "nearest": {
+        "n": 429,
+        "correct": 186,
+        "percent": 43.36,
+        "question_interval": [
+          38.93,
+          48.25
+        ],
+        "gene_interval": [
+          38.19,
+          48.5
+        ]
+      },
+      "fixed": 31,
+      "broken": 28,
+      "net": 3,
+      "net_question_interval": [
+        -11,
+        18
+      ],
+      "net_gene_interval": [
+        -12,
+        19
+      ],
+      "mcnemar_p": 0.794843653982861
+    },
+    "main_not_previously_reported": {
+      "no_papers": {
+        "n": 150,
+        "correct": 58,
+        "percent": 38.67,
+        "question_interval": [
+          31.33,
+          46.68
+        ],
+        "gene_interval": [
+          30.56,
+          47.53
+        ]
+      },
+      "with_papers": {
+        "n": 150,
+        "correct": 62,
+        "percent": 41.33,
+        "question_interval": [
+          33.98,
+          50.0
+        ],
+        "gene_interval": [
+          32.67,
+          49.67
+        ]
+      },
+      "nearest": {
+        "n": 150,
+        "correct": 45,
+        "percent": 30.0,
+        "question_interval": [
+          22.67,
+          37.33
+        ],
+        "gene_interval": [
+          23.13,
+          37.91
+        ]
+      },
+      "fixed": 12,
+      "broken": 8,
+      "net": 4,
+      "net_question_interval": [
+        -5,
+        13
+      ],
+      "net_gene_interval": [
+        -5,
+        13
+      ],
+      "mcnemar_p": 0.5034446716308594
+    },
+    "main_lipid": {
+      "no_papers": {
+        "n": 29,
+        "correct": 17,
+        "percent": 58.62,
+        "question_interval": [
+          41.38,
+          75.86
+        ],
+        "gene_interval": [
+          41.38,
+          75.86
+        ]
+      },
+      "with_papers": {
+        "n": 29,
+        "correct": 17,
+        "percent": 58.62,
+        "question_interval": [
+          41.38,
+          75.86
+        ],
+        "gene_interval": [
+          41.38,
+          75.86
+        ]
+      },
+      "nearest": {
+        "n": 29,
+        "correct": 11,
+        "percent": 37.93,
+        "question_interval": [
+          20.69,
+          55.17
+        ],
+        "gene_interval": [
+          20.69,
+          55.17
+        ]
+      },
+      "fixed": 1,
+      "broken": 1,
+      "net": 0,
+      "net_question_interval": [
+        -3,
+        3
+      ],
+      "net_gene_interval": [
+        -3,
+        3
+      ],
+      "mcnemar_p": 1.0
+    },
+    "main_protein": {
+      "no_papers": {
+        "n": 179,
+        "correct": 73,
+        "percent": 40.78,
+        "question_interval": [
+          34.06,
+          48.04
+        ],
+        "gene_interval": [
+          33.89,
+          47.75
+        ]
+      },
+      "with_papers": {
+        "n": 179,
+        "correct": 73,
+        "percent": 40.78,
+        "question_interval": [
+          34.08,
+          48.04
+        ],
+        "gene_interval": [
+          33.89,
+          48.04
+        ]
+      },
+      "nearest": {
+        "n": 179,
+        "correct": 97,
+        "percent": 54.19,
+        "question_interval": [
+          46.93,
+          61.45
+        ],
+        "gene_interval": [
+          46.96,
+          61.45
+        ]
+      },
+      "fixed": 14,
+      "broken": 14,
+      "net": 0,
+      "net_question_interval": [
+        -10,
+        10
+      ],
+      "net_gene_interval": [
+        -10,
+        10
+      ],
+      "mcnemar_p": 1.0
+    },
+    "main_other": {
+      "no_papers": {
+        "n": 221,
+        "correct": 110,
+        "percent": 49.77,
+        "question_interval": [
+          42.99,
+          56.56
+        ],
+        "gene_interval": [
+          40.89,
+          58.07
+        ]
+      },
+      "with_papers": {
+        "n": 221,
+        "correct": 113,
+        "percent": 51.13,
+        "question_interval": [
+          44.34,
+          57.47
+        ],
+        "gene_interval": [
+          42.45,
+          59.26
+        ]
+      },
+      "nearest": {
+        "n": 221,
+        "correct": 78,
+        "percent": 35.29,
+        "question_interval": [
+          28.96,
+          41.63
+        ],
+        "gene_interval": [
+          28.14,
+          42.25
+        ]
+      },
+      "fixed": 16,
+      "broken": 13,
+      "net": 3,
+      "net_question_interval": [
+        -8,
+        14
+      ],
+      "net_gene_interval": [
+        -8,
+        14
+      ],
+      "mcnemar_p": 0.711071103811264
+    },
+    "giveaway": {
+      "no_papers": {
+        "n": 246,
+        "correct": 228,
+        "percent": 92.68,
+        "question_interval": [
+          89.43,
+          95.53
+        ],
+        "gene_interval": [
+          89.39,
+          95.92
+        ]
+      },
+      "with_papers": {
+        "n": 246,
+        "correct": 228,
+        "percent": 92.68,
+        "question_interval": [
+          89.43,
+          95.53
+        ],
+        "gene_interval": [
+          89.39,
+          95.92
+        ]
+      },
+      "nearest": {
+        "n": 246,
+        "correct": 111,
+        "percent": 45.12,
+        "question_interval": [
+          39.01,
+          51.63
+        ],
+        "gene_interval": [
+          39.02,
+          51.43
+        ]
+      },
+      "fixed": 0,
+      "broken": 0,
+      "net": 0,
+      "net_question_interval": [
+        0,
+        0
+      ],
+      "net_gene_interval": [
+        0,
+        0
+      ],
+      "mcnemar_p": 1.0
+    },
+    "full": {
+      "no_papers": {
+        "n": 1085,
+        "correct": 654,
+        "percent": 60.28,
+        "question_interval": [
+          57.14,
+          63.13
+        ],
+        "gene_interval": [
+          54.93,
+          65.02
+        ]
+      },
+      "with_papers": {
+        "n": 1085,
+        "correct": 621,
+        "percent": 57.24,
+        "question_interval": [
+          54.19,
+          60.18
+        ],
+        "gene_interval": [
+          50.27,
+          64.72
+        ]
+      },
+      "nearest": {
+        "n": 1085,
+        "correct": 574,
+        "percent": 52.9,
+        "question_interval": [
+          49.95,
+          55.67
+        ],
+        "gene_interval": [
+          43.01,
+          62.32
+        ]
+      },
+      "fixed": 78,
+      "broken": 111,
+      "net": -33,
+      "net_question_interval": [
+        -59,
+        -7
+      ],
+      "net_gene_interval": [
+        -147,
+        39
+      ],
+      "mcnemar_p": 0.019688345605355914
+    },
+    "hypothyroid": {
+      "no_papers": {
+        "n": 19,
+        "correct": 9,
+        "percent": 47.37,
+        "question_interval": [
+          26.32,
+          68.42
+        ],
+        "gene_interval": [
+          22.22,
+          70.0
+        ]
+      },
+      "with_papers": {
+        "n": 19,
+        "correct": 7,
+        "percent": 36.84,
+        "question_interval": [
+          15.79,
+          57.89
+        ],
+        "gene_interval": [
+          11.11,
+          60.0
+        ]
+      },
+      "nearest": {
+        "n": 19,
+        "correct": 5,
+        "percent": 26.32,
+        "question_interval": [
+          5.26,
+          47.37
+        ],
+        "gene_interval": [
+          5.56,
+          50.0
+        ]
+      },
+      "fixed": 3,
+      "broken": 5,
+      "net": -2,
+      "net_question_interval": [
+        -7,
+        3
+      ],
+      "net_gene_interval": [
+        -7,
+        3
+      ],
+      "mcnemar_p": 0.7265625
+    },
+    "exam_b_gpt": {
+      "no_papers": {
+        "n": 38,
+        "correct": 23,
+        "percent": 60.53,
+        "question_interval": [
+          44.74,
+          76.32
+        ],
+        "gene_interval": [
+          39.53,
+          78.95
+        ]
+      },
+      "with_papers": {
+        "n": 38,
+        "correct": 24,
+        "percent": 63.16,
+        "question_interval": [
+          47.37,
+          78.95
+        ],
+        "gene_interval": [
+          42.86,
+          81.08
+        ]
+      },
+      "nearest": {
+        "n": 38,
+        "correct": 14,
+        "percent": 36.84,
+        "question_interval": [
+          21.05,
+          52.63
+        ],
+        "gene_interval": [
+          21.05,
+          55.56
+        ]
+      },
+      "fixed": 1,
+      "broken": 0,
+      "net": 1,
+      "net_question_interval": [
+        0,
+        3
+      ],
+      "net_gene_interval": [
+        0,
+        3
+      ],
+      "mcnemar_p": 1.0
+    },
+    "exam_b_rule": {
+      "no_papers": {
+        "n": 38,
+        "correct": 24,
+        "percent": 63.16,
+        "question_interval": [
+          47.37,
+          78.95
+        ],
+        "gene_interval": [
+          42.86,
+          81.08
+        ]
+      },
+      "with_papers": {
+        "n": 38,
+        "correct": 24,
+        "percent": 63.16,
+        "question_interval": [
+          47.37,
+          78.95
+        ],
+        "gene_interval": [
+          42.86,
+          81.08
+        ]
+      },
+      "nearest": {
+        "n": 38,
+        "correct": 14,
+        "percent": 36.84,
+        "question_interval": [
+          21.05,
+          52.63
+        ],
+        "gene_interval": [
+          21.05,
+          55.56
+        ]
+      },
+      "fixed": 0,
+      "broken": 0,
+      "net": 0,
+      "net_question_interval": [
+        0,
+        0
+      ],
+      "net_gene_interval": [
+        0,
+        0
+      ],
+      "mcnemar_p": 1.0
+    },
+    "exam_b_caldera": {
+      "n": 38,
+      "correct": 12,
+      "percent": 31.58,
+      "question_interval": [
+        18.42,
+        47.37
+      ],
+      "gene_interval": [
+        17.95,
+        47.06
+      ]
+    }
+  },
+  "pooled": {
+    "gpt": {
+      "uk": {
+        "fixed": 64,
+        "broken": 26
+      },
+      "main": {
+        "fixed": 31,
+        "broken": 28
+      },
+      "pooled_fixed": 95,
+      "pooled_broken": 54,
+      "mcnemar_p": 0.0009833332636449176
+    },
+    "rule": {
+      "uk": {
+        "fixed": 62,
+        "broken": 42
+      },
+      "exam_b": {
+        "fixed": 0,
+        "broken": 0
+      },
+      "pooled_fixed": 62,
+      "pooled_broken": 42,
+      "mcnemar_p": 0.061926379878627334
+    }
+  },
+  "hallucinations": 82
+}

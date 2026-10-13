@@ -1,0 +1,508 @@
+{
+  "neighborhoods": 1348,
+  "gpt_correct": 798,
+  "caldera_correct": 757,
+  "nearest_correct": 636,
+  "gpt_caldera_agree": 668,
+  "gpt_nearest_agree": 549,
+  "fixed_0.9_gpt_caldera": 864,
+  "fixed_0.9_gpt_nearest": 828,
+  "loco_threshold_gpt_caldera": 869,
+  "loco_threshold_gpt_nearest": 838,
+  "loco_thresholds_caldera": [
+    {
+      "chrom": 1,
+      "threshold": 0.75,
+      "n": 172
+    },
+    {
+      "chrom": 2,
+      "threshold": 0.85,
+      "n": 73
+    },
+    {
+      "chrom": 3,
+      "threshold": 0.85,
+      "n": 48
+    },
+    {
+      "chrom": 4,
+      "threshold": 0.85,
+      "n": 69
+    },
+    {
+      "chrom": 5,
+      "threshold": 0.85,
+      "n": 47
+    },
+    {
+      "chrom": 6,
+      "threshold": 0.85,
+      "n": 82
+    },
+    {
+      "chrom": 7,
+      "threshold": 0.85,
+      "n": 40
+    },
+    {
+      "chrom": 8,
+      "threshold": 0.85,
+      "n": 69
+    },
+    {
+      "chrom": 9,
+      "threshold": 0.85,
+      "n": 52
+    },
+    {
+      "chrom": 10,
+      "threshold": 0.85,
+      "n": 35
+    },
+    {
+      "chrom": 11,
+      "threshold": 0.85,
+      "n": 87
+    },
+    {
+      "chrom": 12,
+      "threshold": 0.85,
+      "n": 66
+    },
+    {
+      "chrom": 13,
+      "threshold": 0.85,
+      "n": 11
+    },
+    {
+      "chrom": 14,
+      "threshold": 0.85,
+      "n": 22
+    },
+    {
+      "chrom": 15,
+      "threshold": 0.85,
+      "n": 25
+    },
+    {
+      "chrom": 16,
+      "threshold": 0.85,
+      "n": 101
+    },
+    {
+      "chrom": 17,
+      "threshold": 0.85,
+      "n": 92
+    },
+    {
+      "chrom": 18,
+      "threshold": 0.85,
+      "n": 28
+    },
+    {
+      "chrom": 19,
+      "threshold": 0.85,
+      "n": 139
+    },
+    {
+      "chrom": 20,
+      "threshold": 0.85,
+      "n": 34
+    },
+    {
+      "chrom": 21,
+      "threshold": 0.85,
+      "n": 17
+    },
+    {
+      "chrom": 22,
+      "threshold": 0.85,
+      "n": 39
+    }
+  ],
+  "loco_thresholds_nearest": [
+    {
+      "chrom": 1,
+      "threshold": 0.75,
+      "n": 172
+    },
+    {
+      "chrom": 2,
+      "threshold": 0.75,
+      "n": 73
+    },
+    {
+      "chrom": 3,
+      "threshold": 0.75,
+      "n": 48
+    },
+    {
+      "chrom": 4,
+      "threshold": 0.75,
+      "n": 69
+    },
+    {
+      "chrom": 5,
+      "threshold": 0.75,
+      "n": 47
+    },
+    {
+      "chrom": 6,
+      "threshold": 0.75,
+      "n": 82
+    },
+    {
+      "chrom": 7,
+      "threshold": 0.75,
+      "n": 40
+    },
+    {
+      "chrom": 8,
+      "threshold": 0.75,
+      "n": 69
+    },
+    {
+      "chrom": 9,
+      "threshold": 0.75,
+      "n": 52
+    },
+    {
+      "chrom": 10,
+      "threshold": 0.75,
+      "n": 35
+    },
+    {
+      "chrom": 11,
+      "threshold": 0.75,
+      "n": 87
+    },
+    {
+      "chrom": 12,
+      "threshold": 0.75,
+      "n": 66
+    },
+    {
+      "chrom": 13,
+      "threshold": 0.75,
+      "n": 11
+    },
+    {
+      "chrom": 14,
+      "threshold": 0.75,
+      "n": 22
+    },
+    {
+      "chrom": 15,
+      "threshold": 0.75,
+      "n": 25
+    },
+    {
+      "chrom": 16,
+      "threshold": 0.75,
+      "n": 101
+    },
+    {
+      "chrom": 17,
+      "threshold": 0.75,
+      "n": 92
+    },
+    {
+      "chrom": 18,
+      "threshold": 0.75,
+      "n": 28
+    },
+    {
+      "chrom": 19,
+      "threshold": 0.75,
+      "n": 139
+    },
+    {
+      "chrom": 20,
+      "threshold": 0.75,
+      "n": 34
+    },
+    {
+      "chrom": 21,
+      "threshold": 0.75,
+      "n": 17
+    },
+    {
+      "chrom": 22,
+      "threshold": 0.75,
+      "n": 39
+    }
+  ],
+  "loco_tree_agree_confidence_caldera": 869,
+  "loco_tree_rich_caldera": 838,
+  "descriptive_rich_tree_text": "if gpt_conf <= 0.840\n  if caldera_p <= 0.393\n    take CALDERA\n  if caldera_p > 0.393\n    take CALDERA\nif gpt_conf > 0.840\n  if gap <= 0.171\n    take GPT\n  if gap > 0.171\n    take GPT",
+  "loco_caldera_probability_line": 840,
+  "loco_caldera_probability_thresholds": [
+    {
+      "chrom": 1,
+      "threshold": 0.4,
+      "n": 172
+    },
+    {
+      "chrom": 2,
+      "threshold": 0.4,
+      "n": 73
+    },
+    {
+      "chrom": 3,
+      "threshold": 0.4,
+      "n": 48
+    },
+    {
+      "chrom": 4,
+      "threshold": 0.4,
+      "n": 69
+    },
+    {
+      "chrom": 5,
+      "threshold": 0.4,
+      "n": 47
+    },
+    {
+      "chrom": 6,
+      "threshold": 0.4,
+      "n": 82
+    },
+    {
+      "chrom": 7,
+      "threshold": 0.4,
+      "n": 40
+    },
+    {
+      "chrom": 8,
+      "threshold": 0.4,
+      "n": 69
+    },
+    {
+      "chrom": 9,
+      "threshold": 0.4,
+      "n": 52
+    },
+    {
+      "chrom": 10,
+      "threshold": 0.45,
+      "n": 35
+    },
+    {
+      "chrom": 11,
+      "threshold": 0.4,
+      "n": 87
+    },
+    {
+      "chrom": 12,
+      "threshold": 0.4,
+      "n": 66
+    },
+    {
+      "chrom": 13,
+      "threshold": 0.4,
+      "n": 11
+    },
+    {
+      "chrom": 14,
+      "threshold": 0.4,
+      "n": 22
+    },
+    {
+      "chrom": 15,
+      "threshold": 0.4,
+      "n": 25
+    },
+    {
+      "chrom": 16,
+      "threshold": 0.4,
+      "n": 101
+    },
+    {
+      "chrom": 17,
+      "threshold": 0.4,
+      "n": 92
+    },
+    {
+      "chrom": 18,
+      "threshold": 0.4,
+      "n": 28
+    },
+    {
+      "chrom": 19,
+      "threshold": 0.4,
+      "n": 139
+    },
+    {
+      "chrom": 20,
+      "threshold": 0.4,
+      "n": 34
+    },
+    {
+      "chrom": 21,
+      "threshold": 0.4,
+      "n": 17
+    },
+    {
+      "chrom": 22,
+      "threshold": 0.4,
+      "n": 39
+    }
+  ],
+  "disagreement_bins_by_caldera_probability": [
+    {
+      "caldera_probability": "0.0-0.3",
+      "n": 297,
+      "caldera_right": 44,
+      "gpt_right": 110
+    },
+    {
+      "caldera_probability": "0.3-0.5",
+      "n": 217,
+      "caldera_right": 68,
+      "gpt_right": 78
+    },
+    {
+      "caldera_probability": "0.5-0.7",
+      "n": 128,
+      "caldera_right": 52,
+      "gpt_right": 40
+    },
+    {
+      "caldera_probability": "0.7-0.9",
+      "n": 30,
+      "caldera_right": 26,
+      "gpt_right": 4
+    },
+    {
+      "caldera_probability": "0.9-1.0",
+      "n": 8,
+      "caldera_right": 4,
+      "gpt_right": 3
+    }
+  ],
+  "trait_match_rule": 829,
+  "loco_trait_match_then_sureness": 843,
+  "loco_trait_match_then_sureness_thresholds": [
+    {
+      "chrom": 1,
+      "threshold": 0.95,
+      "n": 172
+    },
+    {
+      "chrom": 2,
+      "threshold": 0.75,
+      "n": 73
+    },
+    {
+      "chrom": 3,
+      "threshold": 0.75,
+      "n": 48
+    },
+    {
+      "chrom": 4,
+      "threshold": 0.95,
+      "n": 69
+    },
+    {
+      "chrom": 5,
+      "threshold": 0.75,
+      "n": 47
+    },
+    {
+      "chrom": 6,
+      "threshold": 0.75,
+      "n": 82
+    },
+    {
+      "chrom": 7,
+      "threshold": 0.75,
+      "n": 40
+    },
+    {
+      "chrom": 8,
+      "threshold": 0.75,
+      "n": 69
+    },
+    {
+      "chrom": 9,
+      "threshold": 0.95,
+      "n": 52
+    },
+    {
+      "chrom": 10,
+      "threshold": 0.75,
+      "n": 35
+    },
+    {
+      "chrom": 11,
+      "threshold": 0.75,
+      "n": 87
+    },
+    {
+      "chrom": 12,
+      "threshold": 0.75,
+      "n": 66
+    },
+    {
+      "chrom": 13,
+      "threshold": 0.75,
+      "n": 11
+    },
+    {
+      "chrom": 14,
+      "threshold": 0.95,
+      "n": 22
+    },
+    {
+      "chrom": 15,
+      "threshold": 0.75,
+      "n": 25
+    },
+    {
+      "chrom": 16,
+      "threshold": 0.75,
+      "n": 101
+    },
+    {
+      "chrom": 17,
+      "threshold": 0.95,
+      "n": 92
+    },
+    {
+      "chrom": 18,
+      "threshold": 0.75,
+      "n": 28
+    },
+    {
+      "chrom": 19,
+      "threshold": 0.75,
+      "n": 139
+    },
+    {
+      "chrom": 20,
+      "threshold": 0.75,
+      "n": 34
+    },
+    {
+      "chrom": 21,
+      "threshold": 0.75,
+      "n": 17
+    },
+    {
+      "chrom": 22,
+      "threshold": 0.75,
+      "n": 39
+    }
+  ],
+  "disagree_caldera_is_best_trait_match": {
+    "n": 293,
+    "caldera_right": 111,
+    "gpt_right": 80
+  },
+  "disagree_caldera_is_not_best_trait_match": {
+    "n": 387,
+    "caldera_right": 83,
+    "gpt_right": 155
+  }
+}

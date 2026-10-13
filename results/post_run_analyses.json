@@ -1,0 +1,176 @@
+{
+  "note": "Computed from saved answers after the run. No new model calls. Not locked in advance.",
+  "gpt_vs_nearest_no_papers": {
+    "all_main": {
+      "n": 429,
+      "gpt_correct": 200,
+      "nearest_correct": 186,
+      "only_gpt_right": 95,
+      "only_nearest_right": 81,
+      "mcnemar_p": 0.32714045509209555
+    },
+    "diseases_and_other": {
+      "n": 221,
+      "gpt_correct": 110,
+      "nearest_correct": 78,
+      "only_gpt_right": 57,
+      "only_nearest_right": 25,
+      "mcnemar_p": 0.0005347214913281793
+    },
+    "blood_protein": {
+      "n": 179,
+      "gpt_correct": 73,
+      "nearest_correct": 97,
+      "only_gpt_right": 31,
+      "only_nearest_right": 55,
+      "mcnemar_p": 0.012672513952314862
+    },
+    "not_previously_reported": {
+      "n": 150,
+      "gpt_correct": 58,
+      "nearest_correct": 45,
+      "only_gpt_right": 34,
+      "only_nearest_right": 21,
+      "mcnemar_p": 0.10478948242660333
+    }
+  },
+  "out_of_list": {
+    "no_papers": {
+      "n": 77,
+      "blood_protein_questions": 77,
+      "named_the_measured_protein": 77,
+      "on_main_set": 23,
+      "examples": [
+        {
+          "id": "A00108",
+          "trait": "Circulating CRTAM levels (id: OID00304_OID20914)",
+          "raw_predicted": "CRTAM",
+          "measured_protein": "CRTAM"
+        },
+        {
+          "id": "A00129",
+          "trait": "Circulating LGMN levels",
+          "raw_predicted": "LGMN",
+          "measured_protein": "LGMN"
+        },
+        {
+          "id": "A00144",
+          "trait": "Circulating CD93 levels",
+          "raw_predicted": "CD93",
+          "measured_protein": "CD93"
+        },
+        {
+          "id": "A00145",
+          "trait": "Circulating IL18BP levels",
+          "raw_predicted": "IL18BP",
+          "measured_protein": "IL18BP"
+        },
+        {
+          "id": "A00188",
+          "trait": "Circulating TINAGL1 levels",
+          "raw_predicted": "TINAGL1",
+          "measured_protein": "TINAGL1"
+        }
+      ]
+    },
+    "with_papers": {
+      "n": 5,
+      "blood_protein_questions": 5,
+      "named_the_measured_protein": 5,
+      "on_main_set": 2,
+      "examples": [
+        {
+          "id": "A00271",
+          "trait": "Circulating CRIM1 levels",
+          "raw_predicted": "CRIM1",
+          "measured_protein": "CRIM1"
+        },
+        {
+          "id": "A00277",
+          "trait": "Circulating KLB levels",
+          "raw_predicted": "KLB",
+          "measured_protein": "KLB"
+        },
+        {
+          "id": "A00555",
+          "trait": "Circulating PRSS27 levels",
+          "raw_predicted": "PRSS27",
+          "measured_protein": "PRSS27"
+        },
+        {
+          "id": "A00843",
+          "trait": "Circulating XPNPEP2 levels",
+          "raw_predicted": "XPNPEP2",
+          "measured_protein": "XPNPEP2"
+        },
+        {
+          "id": "A00951",
+          "trait": "Circulating SLAMF1 levels",
+          "raw_predicted": "SLAMF1",
+          "measured_protein": "SLAMF1"
+        }
+      ]
+    },
+    "guardrail": "A gene not in the candidate list was stored as a blank answer and counted wrong."
+  },
+  "repeat_collapse": {
+    "full_set_n": 1085,
+    "full_set_fixed": 78,
+    "full_set_broken": 111,
+    "full_set_broken_mcnemar_p": 0.019688345605355914,
+    "asgr1_breaks": 54,
+    "break_top": [
+      [
+        "ASGR1",
+        54
+      ],
+      [
+        "SERPINA1",
+        7
+      ],
+      [
+        "APOE",
+        7
+      ],
+      [
+        "SLC39A8",
+        3
+      ],
+      [
+        "BANK1",
+        3
+      ],
+      [
+        "STAB2",
+        2
+      ],
+      [
+        "FUT2",
+        2
+      ],
+      [
+        "RUNX1",
+        2
+      ]
+    ],
+    "main_fixed": 31,
+    "main_broken": 28,
+    "main_net": 3,
+    "main_mcnemar_p": 0.794843653982861,
+    "answers_not_in_full_set": [
+      "M00131",
+      "M00235"
+    ]
+  },
+  "pooled_papers_caveat": {
+    "uk_fixed": 64,
+    "uk_broken": 26,
+    "main_fixed": 31,
+    "main_broken": 28,
+    "pooled_fixed": 95,
+    "pooled_broken": 54,
+    "pooled_mcnemar_p": 0.0009833332636449176,
+    "main_only_mcnemar_p": 0.794843653982861,
+    "note": "The UK rows added papers only where the two methods disagreed, and those studies were public before the model's training cutoff. The new main set added papers on every question."
+  }
+}

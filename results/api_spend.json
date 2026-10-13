@@ -1,0 +1,72 @@
+{
+  "parts": [
+    {
+      "name": "memorization",
+      "usd": 0.10553
+    },
+    {
+      "name": "list_order",
+      "usd": 0.600555
+    },
+    {
+      "name": "uk_baseline",
+      "usd": 3.5167600000000028
+    },
+    {
+      "name": "wording_gene_family",
+      "usd": 2.5189524999999975
+    },
+    {
+      "name": "wording_confidence_scale",
+      "usd": 2.5033124999999994
+    },
+    {
+      "name": "paper_workshop",
+      "usd": 2.1807450000000004
+    },
+    {
+      "name": "paper_workshop_trait",
+      "usd": 1.7514900000000004
+    },
+    {
+      "name": "paper_workshop_measure",
+      "usd": 1.7659800000000005
+    },
+    {
+      "name": "paper_workshop_semantic",
+      "usd": 2.1981225000000015
+    },
+    {
+      "name": "paper_workshop_semantic_prompt",
+      "usd": 2.2056449999999996
+    },
+    {
+      "name": "paper_self_search",
+      "usd": 2.253143
+    },
+    {
+      "name": "heldout_papers",
+      "usd": 14.081862
+    },
+    {
+      "name": "embeddings",
+      "usd": 2.512387540000002
+    },
+    {
+      "name": "new_study_embeddings",
+      "usd": 3.385743499999998
+    },
+    {
+      "name": "new_study_model",
+      "usd": 28.378074999999978
+    },
+    {
+      "name": "live_check",
+      "usd": 0.5283450000000001
+    },
+    {
+      "name": "wording_check",
+      "usd": 2.1476800000000025
+    }
+  ]
+}

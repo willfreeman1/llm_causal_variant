@@ -1,0 +1,10 @@
+lancedb==0.40.0
+pylance==13.0.0
+pyarrow==19.0.1
+langgraph==1.2.12
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.6.1
+scipy==1.17.1
+pytest==8.4.2
+requests==2.34.2

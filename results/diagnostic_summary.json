@@ -1,0 +1,206 @@
+{
+  "cost_usd": 2.1476800000000025,
+  "slices": {
+    "blood_protein": {
+      "n": 179,
+      "locked_correct": 73,
+      "new_correct": 83,
+      "fixed": 14,
+      "broken": 4,
+      "net": 10,
+      "net_question_interval": [
+        2,
+        18
+      ],
+      "mcnemar_p": 0.0308837890625
+    },
+    "diseases_and_other": {
+      "n": 221,
+      "locked_correct": 110,
+      "new_correct": 112,
+      "fixed": 4,
+      "broken": 2,
+      "net": 2,
+      "net_question_interval": [
+        -3,
+        7
+      ],
+      "mcnemar_p": 0.6875
+    },
+    "lipids": {
+      "n": 29,
+      "locked_correct": 17,
+      "new_correct": 17,
+      "fixed": 0,
+      "broken": 0,
+      "net": 0,
+      "net_question_interval": [
+        0,
+        0
+      ],
+      "mcnemar_p": 1.0
+    },
+    "main": {
+      "n": 429,
+      "locked_correct": 200,
+      "new_correct": 212,
+      "fixed": 18,
+      "broken": 6,
+      "net": 12,
+      "net_question_interval": [
+        3,
+        22
+      ],
+      "mcnemar_p": 0.022655844688415527
+    },
+    "giveaway": {
+      "n": 246,
+      "locked_correct": 228,
+      "new_correct": 228,
+      "fixed": 0,
+      "broken": 0,
+      "net": 0,
+      "net_question_interval": [
+        0,
+        0
+      ],
+      "mcnemar_p": 1.0
+    }
+  },
+  "out_of_list": {
+    "locked_all": 77,
+    "new_all": 26,
+    "locked_main": 23,
+    "new_main": 13,
+    "locked_main_protein": 23,
+    "new_main_protein": 12
+  },
+  "protein_vs_nearest": {
+    "locked": {
+      "n": 179,
+      "model_correct": 73,
+      "nearest_correct": 97,
+      "only_model": 31,
+      "only_nearest": 55,
+      "mcnemar_p": 0.012672513952314862
+    },
+    "new": {
+      "n": 179,
+      "model_correct": 83,
+      "nearest_correct": 97,
+      "only_model": 40,
+      "only_nearest": 54,
+      "mcnemar_p": 0.17966501480803032
+    }
+  },
+  "sureness_main": {
+    "locked": {
+      "n": 429,
+      "mean": 0.777948717948718,
+      "median": 0.93,
+      "p10": 0.34,
+      "p90": 0.99,
+      "at_or_above_0.85": 251,
+      "below_0.70": 118
+    },
+    "new": {
+      "n": 429,
+      "mean": 0.7741724941724942,
+      "median": 0.86,
+      "p10": 0.42,
+      "p90": 0.99,
+      "at_or_above_0.85": 224,
+      "below_0.70": 121
+    }
+  },
+  "sureness_protein": {
+    "locked": {
+      "n": 179,
+      "mean": 0.6621787709497206,
+      "median": 0.72,
+      "p10": 0.02,
+      "p90": 0.98,
+      "at_or_above_0.85": 80,
+      "below_0.70": 79
+    },
+    "new": {
+      "n": 179,
+      "mean": 0.6775418994413407,
+      "median": 0.72,
+      "p10": 0.272,
+      "p90": 0.98,
+      "at_or_above_0.85": 65,
+      "below_0.70": 76
+    }
+  },
+  "examples": {
+    "gained": [
+      {
+        "id": "M00083",
+        "trait": "Circulating SIGLEC9 levels",
+        "label": "ASGR1",
+        "locked": "CD68",
+        "new": "ASGR1",
+        "reason": "ASGR1 is the strongest candidate because it encodes the major hepatic asialoglycoprotein receptor, a key regulator of circulating glycoprotein clearance. SIGLEC9 is a heavily glycosylated cell-surface protein, making altered ASGR1-mediated clearance a plausible mechanism for changing its circulating levels."
+      },
+      {
+        "id": "M00125",
+        "trait": "Circulating WFIKKN1 levels",
+        "label": "TNFRSF13B",
+        "locked": "FLCN",
+        "new": "TNFRSF13B",
+        "reason": "TNFRSF13B (TACI) is the strongest biologically plausible regulator in this locus because WFIKKN1 is a secreted extracellular protein and TNFRSF13B has established roles in immune signaling that commonly influence circulating protein levels. Other genes here have weaker direct links to secreted protein regulation."
+      },
+      {
+        "id": "M00234",
+        "trait": "Circulating PRSS27 levels",
+        "label": "FUT2",
+        "locked": "FGF21",
+        "new": "FUT2",
+        "reason": "FUT2 is a strong functional candidate because it alters secretor-dependent glycosylation of circulating proteins, a common mechanism underlying plasma protein GWAS signals. Such variants can change measured PRSS27 levels via secretion, stability, or assay epitope effects more plausibly than most other genes in this locus."
+      },
+      {
+        "id": "M00237",
+        "trait": "Circulating XPNPEP2 levels",
+        "label": "HNF4A",
+        "locked": "XPNPEP2",
+        "new": "HNF4A",
+        "reason": "HNF4A is a master hepatic transcription factor with broad effects on plasma protein expression and metabolism, making it the most plausible trans-regulatory gene for circulating XPNPEP2 levels among these candidates. Other genes in the locus have less clear links to systemic protein regulation."
+      }
+    ],
+    "lost": [
+      {
+        "id": "M00080",
+        "trait": "Circulating ANGPT1 levels (id: OID00380_OID20740)",
+        "label": "BANK1",
+        "locked": "BANK1",
+        "new": "SLC39A8",
+        "reason": "SLC39A8 encodes the metal transporter ZIP8 and has broad, well-established effects on circulating glycoproteins and inflammatory signaling through manganese-dependent glycosylation pathways. BANK1 is a B-cell signaling gene with less direct evidence linking it to systemic ANGPT1 regulation."
+      },
+      {
+        "id": "M00085",
+        "trait": "Circulating KLK11 levels",
+        "label": "GAL3ST2",
+        "locked": "GAL3ST2",
+        "new": "PDCD1",
+        "reason": "PDCD1 is the strongest functional candidate in this locus because KLK11 is linked to immune/tumor biology, and PD-1 signaling can influence protease expression in immune and cancer contexts. Other genes here have less obvious literature connections to circulating KLK11 regulation."
+      },
+      {
+        "id": "M00276",
+        "trait": "Circulating BMP6 levels",
+        "label": "RUNX1",
+        "locked": "RUNX1",
+        "new": "RCAN1",
+        "reason": "RCAN1 regulates calcineurin-NFAT signaling, a pathway with documented cross-talk to BMP/TGF-beta signaling and vascular/endothelial biology, making it the most plausible local regulator of circulating BMP6. Other genes here have weaker known links to BMP6 regulation."
+      },
+      {
+        "id": "M00319",
+        "trait": "Circulating DPP7 levels",
+        "label": "FGL1",
+        "locked": "FGL1",
+        "new": "ASAH1",
+        "reason": "ASAH1 is the strongest functional candidate in this locus because it encodes lysosomal acid ceramidase, a regulator of sphingolipid metabolism and lysosomal proteostasis that could plausibly influence secretion or turnover of circulating DPP7. Other listed genes have less direct mechanistic connection to DPP7 biology."
+      }
+    ]
+  }
+}

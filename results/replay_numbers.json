@@ -1,0 +1,88 @@
+{
+  "uk_loco_rule": 869,
+  "uk_fixed_0.85": 870,
+  "uk_nearest_partner_fixed_0.85": 836,
+  "uk_nearest_partner_loco": 838,
+  "heldout_rule_no_papers": 738,
+  "heldout_rule_papers": 758,
+  "heldout_n": 1153,
+  "exam_main_gpt_no_papers": 200,
+  "exam_main_gpt_papers": 203,
+  "exam_main_nearest": 186,
+  "exam_main_n": 429,
+  "exam_b": {
+    "n": 38,
+    "gpt_no_papers": 23,
+    "gpt_papers": 24,
+    "nearest": 14,
+    "rule_no_papers": 24,
+    "rule_papers": 24,
+    "caldera": 12
+  },
+  "full_n": 1085,
+  "review": {
+    "uk_practice_loco": {
+      "flagged": {
+        "n": 106,
+        "correct": 27,
+        "percent": 25.47
+      },
+      "unflagged": {
+        "n": 1242,
+        "correct": 842,
+        "percent": 67.79
+      }
+    },
+    "heldout_0.85_with_papers": {
+      "flagged": {
+        "n": 97,
+        "correct": 20,
+        "percent": 20.62
+      },
+      "unflagged": {
+        "n": 1056,
+        "correct": 738,
+        "percent": 69.89
+      }
+    },
+    "exam_main_no_papers": {
+      "flagged": {
+        "n": 118,
+        "correct": 22,
+        "percent": 18.64
+      },
+      "unflagged": {
+        "n": 311,
+        "correct": 178,
+        "percent": 57.23
+      }
+    },
+    "exam_main_papers": {
+      "flagged": {
+        "n": 77,
+        "correct": 10,
+        "percent": 12.99
+      },
+      "unflagged": {
+        "n": 352,
+        "correct": 193,
+        "percent": 54.83
+      }
+    }
+  },
+  "coding_pip_guardrail_refused": [],
+  "match": {
+    "uk_loco_869": true,
+    "heldout_738": true,
+    "heldout_758": true,
+    "main_200": true,
+    "main_203": true,
+    "main_186": true,
+    "b_rule_24": true,
+    "b_gpt_23_24": true,
+    "b_cal_12": true,
+    "b_near_14": true,
+    "diagnostic_protein_83": true,
+    "diagnostic_main_212": true
+  }
+}

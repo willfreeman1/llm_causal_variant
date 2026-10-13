@@ -1,0 +1,3698 @@
+{
+  "summary": {
+    "model": "gpt-5.4",
+    "seed": 20261006,
+    "n_gold_rows": 2435,
+    "spent_usd": 0.10553,
+    "calls": 90,
+    "modal_field": {
+      "gold_standard_info.gene_id": "ENSG00000232810",
+      "gold_standard_info.evidence.class": "drug",
+      "gold_standard_info.evidence.confidence": "Low",
+      "gold_standard_info.evidence.curated_by": "Ed Mountjoy",
+      "gold_standard_info.evidence.pubmed_id": "",
+      "metadata.set_label": "ChEMBL_II",
+      "metadata.date_added": "2019-07-29"
+    },
+    "modal_rate": {
+      "gold_standard_info.evidence.class": 0.7207392197125256,
+      "gold_standard_info.evidence.confidence": 0.39630390143737165,
+      "gold_standard_info.evidence.curated_by": 0.8427104722792608,
+      "gold_standard_info.evidence.pubmed_id": 0.8870636550308009,
+      "metadata.set_label": 0.29774127310061604,
+      "metadata.date_added": 0.7207392197125256
+    },
+    "ot_line": {
+      "n": 25,
+      "joint_exact": 0,
+      "joint_exact_rate": 0.0,
+      "field_match_rate": {
+        "gold_standard_info.gene_id": 0.0,
+        "gold_standard_info.evidence.class": 0.0,
+        "gold_standard_info.evidence.confidence": 0.0,
+        "gold_standard_info.evidence.curated_by": 0.0,
+        "gold_standard_info.evidence.pubmed_id": 0.0,
+        "metadata.set_label": 0.0,
+        "metadata.date_added": 0.0
+      },
+      "rare_value_hit_rate": {
+        "gold_standard_info.gene_id": 0.0,
+        "gold_standard_info.evidence.class": 0.0,
+        "gold_standard_info.evidence.confidence": 0.0,
+        "gold_standard_info.evidence.curated_by": 0.0,
+        "gold_standard_info.evidence.pubmed_id": 0.0,
+        "metadata.set_label": 0.0,
+        "metadata.date_added": 0.0
+      },
+      "rare_value_counts": {
+        "gold_standard_info.gene_id": 25,
+        "gold_standard_info.evidence.class": 16,
+        "gold_standard_info.evidence.confidence": 23,
+        "gold_standard_info.evidence.curated_by": 15,
+        "gold_standard_info.evidence.pubmed_id": 15,
+        "metadata.set_label": 24,
+        "metadata.date_added": 16
+      },
+      "unknown_rate": {
+        "gold_standard_info.gene_id": 1.0,
+        "gold_standard_info.evidence.class": 1.0,
+        "gold_standard_info.evidence.confidence": 1.0,
+        "gold_standard_info.evidence.curated_by": 1.0,
+        "gold_standard_info.evidence.pubmed_id": 1.0,
+        "metadata.set_label": 1.0,
+        "metadata.date_added": 1.0
+      }
+    },
+    "ot_keyed": {
+      "n": 25,
+      "joint_exact": 0,
+      "joint_exact_rate": 0.0,
+      "field_match_rate": {
+        "gold_standard_info.evidence.class": 0.0,
+        "gold_standard_info.evidence.confidence": 0.0,
+        "gold_standard_info.evidence.curated_by": 0.0,
+        "gold_standard_info.evidence.pubmed_id": 0.0,
+        "metadata.set_label": 0.0,
+        "metadata.date_added": 0.0
+      },
+      "rare_value_hit_rate": {
+        "gold_standard_info.evidence.class": 0.0,
+        "gold_standard_info.evidence.confidence": 0.0,
+        "gold_standard_info.evidence.curated_by": 0.0,
+        "gold_standard_info.evidence.pubmed_id": 0.0,
+        "metadata.set_label": 0.0,
+        "metadata.date_added": 0.0
+      },
+      "rare_value_counts": {
+        "gold_standard_info.evidence.class": 16,
+        "gold_standard_info.evidence.confidence": 23,
+        "gold_standard_info.evidence.curated_by": 15,
+        "gold_standard_info.evidence.pubmed_id": 15,
+        "metadata.set_label": 24,
+        "metadata.date_added": 16
+      },
+      "unknown_rate": {
+        "gold_standard_info.evidence.class": 1.0,
+        "gold_standard_info.evidence.confidence": 1.0,
+        "gold_standard_info.evidence.curated_by": 1.0,
+        "gold_standard_info.evidence.pubmed_id": 1.0,
+        "metadata.set_label": 1.0,
+        "metadata.date_added": 1.0
+      }
+    },
+    "ot_line_oor_all_unknown": {
+      "n": 10,
+      "all_unknown": 10
+    },
+    "iris_line_exact": {
+      "n": 15,
+      "exact": 2
+    },
+    "iris_oor_unknown": {
+      "n": 5,
+      "unknown": 5
+    },
+    "fake_keyed": {
+      "n": 10,
+      "all_unknown": 10,
+      "any_specific": 0
+    }
+  },
+  "results": [
+    {
+      "kind": "ot_line",
+      "row_number": 1119,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 2.98,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 1119,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 212,
+      "completion_tokens": 55,
+      "cost_usd": 0.001355,
+      "seconds": 2.4,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 17,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.33,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 17,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 220,
+      "completion_tokens": 55,
+      "cost_usd": 0.001375,
+      "seconds": 2.15,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs3734398"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 56,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.43,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 56,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 216,
+      "completion_tokens": 55,
+      "cost_usd": 0.001365,
+      "seconds": 1.89,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs154657"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 60,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 2.25,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 60,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 215,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013625,
+      "seconds": 1.97,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs1801725"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 121,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 2.03,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 121,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 2.07,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs9392556"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 2270,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.29,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 2270,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 212,
+      "completion_tokens": 55,
+      "cost_usd": 0.001355,
+      "seconds": 2.09,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 579,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.58,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 579,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 211,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013525,
+      "seconds": 1.21,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 6,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.42,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 6,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.36,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs2282679"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 1976,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.6,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 1976,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 210,
+      "completion_tokens": 55,
+      "cost_usd": 0.00135,
+      "seconds": 1.21,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 1737,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.47,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 1737,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 212,
+      "completion_tokens": 55,
+      "cost_usd": 0.001355,
+      "seconds": 1.46,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 250,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.48,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 250,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 208,
+      "completion_tokens": 55,
+      "cost_usd": 0.001345,
+      "seconds": 1.21,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 2321,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.36,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 2321,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 211,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013525,
+      "seconds": 1.37,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 120,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.45,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 120,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 229,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013975,
+      "seconds": 1.19,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs10491431"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 777,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.53,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 777,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 212,
+      "completion_tokens": 55,
+      "cost_usd": 0.001355,
+      "seconds": 1.41,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 2314,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.25,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 2314,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 211,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013525,
+      "seconds": 1.21,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 752,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.29,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 752,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 205,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013375000000000001,
+      "seconds": 1.19,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 147,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.41,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 147,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 219,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013725,
+      "seconds": 1.3,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs662138"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 132,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.41,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 132,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.37,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs7535263"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 148,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.52,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 148,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 220,
+      "completion_tokens": 55,
+      "cost_usd": 0.001375,
+      "seconds": 1.22,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs2404602"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 2306,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.35,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 2306,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 211,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013525,
+      "seconds": 1.36,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 42,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.62,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 42,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 217,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013675,
+      "seconds": 1.4,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs7045138"
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 2289,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.41,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 2289,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 210,
+      "completion_tokens": 55,
+      "cost_usd": 0.00135,
+      "seconds": 1.12,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 897,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.66,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 897,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 212,
+      "completion_tokens": 55,
+      "cost_usd": 0.001355,
+      "seconds": 1.13,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 1096,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.6,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 1096,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 212,
+      "completion_tokens": 55,
+      "cost_usd": 0.001355,
+      "seconds": 1.25,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": false,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": ""
+    },
+    {
+      "kind": "ot_line",
+      "row_number": 101,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 178,
+      "completion_tokens": 64,
+      "cost_usd": 0.001405,
+      "seconds": 1.43,
+      "per_field": {
+        "gold_standard_info.gene_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      }
+    },
+    {
+      "kind": "ot_keyed",
+      "row_number": 101,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 219,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013725,
+      "seconds": 1.24,
+      "per_field": {
+        "gold_standard_info.evidence.class": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.confidence": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.curated_by": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "gold_standard_info.evidence.pubmed_id": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.set_label": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        },
+        "metadata.date_added": {
+          "match": false,
+          "rare_gold": true,
+          "rare_hit": false,
+          "unknown": true
+        }
+      },
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "rsid": "rs28489187"
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5001,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.59,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5002,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.36,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5003,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.53,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5004,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.28,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5005,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.6,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5006,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.61,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5007,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.37,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5008,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.38,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5009,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.58,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "ot_line_oor",
+      "row_number": 5010,
+      "response": "gold_standard_info.gene_id=UNKNOWN\ngold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 179,
+      "completion_tokens": 64,
+      "cost_usd": 0.0014075000000000001,
+      "seconds": 1.45,
+      "pred": {
+        "gold_standard_info.gene_id": "UNKNOWN",
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 54,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.82,
+      "match": false,
+      "unknown": true,
+      "gold": "5.5,2.3,4.0,1.3,Iris-versicolor",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 26,
+      "response": "line=5.0,3.0,1.6,0.2,Iris-setosa",
+      "prompt_tokens": 123,
+      "completion_tokens": 24,
+      "cost_usd": 0.0006675000000000001,
+      "seconds": 1.43,
+      "match": true,
+      "unknown": false,
+      "gold": "5.0,3.0,1.6,0.2,Iris-setosa",
+      "pred_line": "5.0,3.0,1.6,0.2,Iris-setosa"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 32,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.92,
+      "match": false,
+      "unknown": true,
+      "gold": "5.4,3.4,1.5,0.4,Iris-setosa",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 11,
+      "response": "line=5.4,3.7,1.5,0.2,Iris-setosa",
+      "prompt_tokens": 123,
+      "completion_tokens": 24,
+      "cost_usd": 0.0006675000000000001,
+      "seconds": 1.32,
+      "match": true,
+      "unknown": false,
+      "gold": "5.4,3.7,1.5,0.2,Iris-setosa",
+      "pred_line": "5.4,3.7,1.5,0.2,Iris-setosa"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 106,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.93,
+      "match": false,
+      "unknown": true,
+      "gold": "7.6,3.0,6.6,2.1,Iris-virginica",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 128,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.99,
+      "match": false,
+      "unknown": true,
+      "gold": "6.1,3.0,4.9,1.8,Iris-virginica",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 44,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.87,
+      "match": false,
+      "unknown": true,
+      "gold": "5.0,3.5,1.6,0.6,Iris-setosa",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 110,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.82,
+      "match": false,
+      "unknown": true,
+      "gold": "7.2,3.6,6.1,2.5,Iris-virginica",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 90,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 1.14,
+      "match": false,
+      "unknown": true,
+      "gold": "5.5,2.5,4.0,1.3,Iris-versicolor",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 30,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.94,
+      "match": false,
+      "unknown": true,
+      "gold": "4.7,3.2,1.6,0.2,Iris-setosa",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 136,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 1.17,
+      "match": false,
+      "unknown": true,
+      "gold": "7.7,3.0,6.1,2.3,Iris-virginica",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 85,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.97,
+      "match": false,
+      "unknown": true,
+      "gold": "5.4,3.0,4.5,1.5,Iris-versicolor",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 149,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.83,
+      "match": false,
+      "unknown": true,
+      "gold": "6.2,3.4,5.4,2.3,Iris-virginica",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 10,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 1.0,
+      "match": false,
+      "unknown": true,
+      "gold": "4.9,3.1,1.5,0.1,Iris-setosa",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line",
+      "row_number": 79,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 1.2,
+      "match": false,
+      "unknown": true,
+      "gold": "6.0,2.9,4.5,1.5,Iris-versicolor",
+      "pred_line": "UNKNOWN"
+    },
+    {
+      "kind": "iris_line_oor",
+      "row_number": 401,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 1.1,
+      "unknown": true
+    },
+    {
+      "kind": "iris_line_oor",
+      "row_number": 402,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.88,
+      "unknown": true
+    },
+    {
+      "kind": "iris_line_oor",
+      "row_number": 403,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.87,
+      "unknown": true
+    },
+    {
+      "kind": "iris_line_oor",
+      "row_number": 404,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.81,
+      "unknown": true
+    },
+    {
+      "kind": "iris_line_oor",
+      "row_number": 405,
+      "response": "line=UNKNOWN",
+      "prompt_tokens": 123,
+      "completion_tokens": 6,
+      "cost_usd": 0.00039750000000000007,
+      "seconds": 0.99,
+      "unknown": true
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.36,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.19,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.53,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.28,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 2.0,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.59,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.43,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.23,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.63,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    },
+    {
+      "kind": "fake_keyed",
+      "row_number": null,
+      "response": "gold_standard_info.evidence.class=UNKNOWN\ngold_standard_info.evidence.confidence=UNKNOWN\ngold_standard_info.evidence.curated_by=UNKNOWN\ngold_standard_info.evidence.pubmed_id=UNKNOWN\nmetadata.set_label=UNKNOWN\nmetadata.date_added=UNKNOWN",
+      "prompt_tokens": 221,
+      "completion_tokens": 55,
+      "cost_usd": 0.0013775,
+      "seconds": 1.64,
+      "pred": {
+        "gold_standard_info.evidence.class": "UNKNOWN",
+        "gold_standard_info.evidence.confidence": "UNKNOWN",
+        "gold_standard_info.evidence.curated_by": "UNKNOWN",
+        "gold_standard_info.evidence.pubmed_id": "UNKNOWN",
+        "metadata.set_label": "UNKNOWN",
+        "metadata.date_added": "UNKNOWN"
+      },
+      "all_unknown": true,
+      "any_specific": false
+    }
+  ]
+}
